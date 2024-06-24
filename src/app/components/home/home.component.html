@@ -1,0 +1,817 @@
+
+<div class="snowflakes" aria-hidden="true">
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+</div>
+
+
+<video autoplay muted loop playsinline class="link-video-background d-none">
+    <source src="#" type="video/mp4">
+</video>
+
+<div class="container animate__animated animate__fadeIn">
+    <div class="row d-flex justify-content-center text-center">
+        <div class="col-md-8 link-content ">
+
+
+            <main id="links" class="my-3">
+                <div class="row">
+                                        <div id="link-verified-wrapper-top" class="col-12 my-2 text-center" style="">
+                        <div>
+                            <small class="link-verified" data-toggle="tooltip" title="Bu sayfa, Girlink.me | BİO Kısaltıcı, QR Oluşturucu, Web Araçları ekibi tarafından manuel olarak doğrulandı."><i class="fa fa-fw fa-check-circle fa-1x"></i> Doğrulanmış Sayfa</small>
+                        </div>
+                    </div>
+
+
+
+
+
+<div id="biolink_block_id_71" data-biolink-block-id="71" class="col-12 my-2">
+    <div class="d-flex flex-column align-items-center">
+        <img src="./../../../assets/uploads/avatars/9a814a2bf237abf578825a953366275a.jpg" alt="Avatar" class="link-image link-avatar-round" style="width: 100px; height: 100px; border-width: 0px; border-color: #CC0C0C; border-style: inset;" />
+    </div>
+</div>
+
+
+
+
+<div id="biolink_block_id_1271" data-biolink-block-id="1271" class="col-12 my-2">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cevdet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="cevdet-special-t" style="background-image:url('https://resim.girlink.me/back.jpg')">
+    <div class="container">
+      <a target="_blank" [href]="addProtocol(link.link)" class="fix-side left" *ngFor="let link of leftLink">
+        <img src="https://resim.girlink.me/star.gif" class="star">
+        <div class="logo">
+          <img [src]="decodeBase64(link.filebyte)">
+        </div>
+        <div class="slogan">
+          <h1>%{{link.indirim}}</h1>
+          <p>{{link.description}}</p>
+        </div>
+        <img src="https://resim.girlink.me/star.gif" class="star two">
+      </a>
+      <div class="t-m">
+        <div class="logo">
+          <h2>Haftalık İndirimli Ürünler</h2>
+        </div>
+        <div class="banners">
+
+          <div class="col bahisbudur-col" *ngFor="let link of links">
+            <a target="_blank" [href]="addProtocol(link.link)" class="item">
+              <div class="top">
+                <ng-container *ngIf="link.filebyte !== undefined && isImage(link.filebyte)">
+                  <img [src]="decodeBase64(link.filebyte)" class="card-img-top" alt="Image">
+                </ng-container>
+              </div>
+            </a>
+          </div>
+          </div>
+        </div>
+        <br>
+        <div class="footer-c">
+        </div>
+      </div>
+      <a target="_blank" class="fix-side right" [href]="addProtocol(link.link)" *ngFor="let link of rightLink">
+        <img src="https://resim.girlink.me/star.gif" class="star">
+        <div class="logo">
+          <img [src]="decodeBase64(link.filebyte)">
+        </div>
+        <div class="slogan">
+          <h1>%{{link.indirim}}</h1>
+          <p>{{link.description}}</p>
+        </div>
+        <img src="https://resim.girlink.me/star.gif" class="star two">
+      </a>
+    </div>
+  <script>
+      window.addEventListener("load", (event) => {
+            const close = document.querySelectorAll(".bottom-fixed > .button");
+            close.forEach((x)=>{
+              x.addEventListener("click",xe,false);
+              function xe(ev){
+                  ev.preventDefault();
+                  this.parentElement.remove()
+              }
+            });
+          });
+  </script>
+    <style>
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.snowflakes {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.snowflake {
+    background: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    animation: snowflakes-fall linear infinite;
+    opacity: 0;
+}
+
+@keyframes snowflakes-fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+    </style>
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+          .cevdet-special-t {
+          position: fixed;
+          height: 100%;
+          width: 100%;
+          left: 0px;
+          top: 0px;
+          background-size: 100% 100%;
+          background-attachment: fixed;
+          padding: 20px;
+          padding-bottom: 60px;
+          overflow-y: scroll;
+          overflow-x: hidden;
+          font-family: 'Montserrat', sans-serif;
+          color: #fff;
+          --fixed-color: #fbb203;
+          --fixed-color-text: #000;
+        }
+        .cevdet-special-t * {
+          box-sizing: border-box;
+        }
+        .cevdet-special-t .fix-side {
+          position: absolute;
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.60);
+          border: 1px solid var(--fixed-color);
+          top: 50%;
+          transform: translateY(-50%);
+          height: 90%;
+          background: #00000078;
+          width: 180px;
+          border-radius: 10px;
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .cevdet-special-t .fix-side.left {
+          left: 20px;
+        }
+        .cevdet-special-t .fix-side.right {
+          right: 20px;
+        }
+        .cevdet-special-t .fix-side .logo {
+          height: 340px;
+        }
+        .cevdet-special-t .fix-side .logo img {
+          margin-top: 80px;
+          height: 70px;
+          width: 330px;
+          width: 300px;
+          object-fit: contain;
+        }
+        .cevdet-special-t .fix-side .star {
+          width: 100%;
+        }
+        .cevdet-special-t .fix-side .slogan {
+          margin: 20px 0;
+          color: #fff;
+          text-align: center;
+        }
+        .cevdet-special-t .fix-side .slogan h1 {
+          color: var(--fixed-color);
+          font-weight: 800;
+          margin: 0px;
+          font-size: 50px;
+        }
+        .cevdet-special-t .fix-side .slogan p {
+          margin: 0px;
+          font-size: 20px;
+        }
+        .cevdet-special-t .fix-side .down {
+          height: 40px;
+        }
+        .cevdet-special-t .fix-side .button {
+          width: 100%;
+          text-align: center;
+          margin: 10px 0;
+          background: var(--fixed-color);
+          border-radius: 30px;
+          padding: 10px;
+          font-size: 12px;
+          font-weight: bold;
+          color: var(--fixed-color-text);
+        }
+        .cevdet-special-t .container {
+          width: 1300px;
+          margin: 0 auto;
+        }
+        @media (max-width: 1680px) and (min-width: 1500px) {
+          .cevdet-special-t .container {
+            width: 1200px !important;
+        }
+        }
+        @media (max-width: 1599px) and (min-width: 1300px) {
+          .cevdet-special-t .container {
+            width: 1100px !important;
+        }
+        }
+        @media (max-width: 1499px) and (min-width: 1200px)
+        {
+          .cevdet-special-t .container {
+            width: 800px !important;
+        }
+        }
+        @media (max-width: 450px){
+          body .cevdet-special-t .banners .col .item.vip .crown-col{
+            width: 30px;
+            height: 30px;
+          }
+          body .cevdet-special-t .banners .col .item.vip .crown-col img{
+            width: 20px !important;
+          }
+          .cevdet-special-t .banners .col .item .top img{
+            height: 50px !important;
+            width: 100px !important;
+          }
+         body .cevdet-special-t .banners .col .item:not(.vip) .top img{
+            height: 50px !important;
+            width: 100px !important;
+          }
+          .cevdet-special-t .banners .col .item.vip{
+            margin-top: 15px !important;
+          }
+          .cevdet-special-t .banners .col .item .bottom{
+            padding: 15px 10px !important;
+          }
+          .cevdet-special-t .banners .col .item .bottom .button{
+            font-size: 11px !important;
+            width: 100% !important;
+          }
+        }
+        @media (max-height: 900px){
+          .cevdet-special-t .fix-side .star.two{
+            display: none;
+          }
+          .cevdet-special-t .fix-side .logo img{
+            margin-top: 85px;
+            height: 80px;
+          }
+        }
+        @media (max-height: 800px){
+          .cevdet-special-t .fix-side .logo img{
+            margin-top: 15px;
+            margin-bottom: 35px;
+            height: 50px;
+          }
+        }
+        @media (max-height: 700px){
+          .cevdet-special-t .fix-side .logo img{
+            margin-top: 15px;
+            margin-bottom: 35px;
+            height: 120px;
+          }
+        }
+        @media (max-width: 1199px) and (min-width: 997px) {
+          .cevdet-special-t .container {
+            width: 600px !important;
+        }
+        }
+        .cevdet-special-t .t-m {
+          display: flex;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+          flex-direction: column;
+        }
+        .cevdet-special-t .t-m img {
+          width: 200px;
+        }
+        .cevdet-special-t .t-m h1 {
+          color: #fff;
+          font-size: 30px;
+          margin: 25px 0 10px 0;
+        }
+        .cevdet-special-t .footer-c {
+          margin-top: 20px;
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+        }
+        .cevdet-special-t .footer-c .licence {
+          display: flex;
+          font-size: 11px;
+          align-items: center;
+          justify-content: center;
+        }
+        .cevdet-special-t .footer-c .licence img {
+          margin-left: 10px;
+          width: inherit !important;
+          height: 40px;
+          margin-top: -5px;
+        }
+        .cevdet-special-t .footer-c .cpyrght {
+          display: flex;
+          font-size: 11px;
+          opacity: 0.5;
+          color: #fff;
+          align-items: center;
+          justify-content: center;
+        }
+        .cevdet-special-t .footer-c .cpyrght img {
+          margin-left: 10px;
+          width: inherit !important;
+          height: 15px;
+        }
+        .cevdet-special-t .banners {
+          width: 100%;
+          display: flex;
+          margin-top: 20px;
+          flex-wrap: wrap;
+        }
+        .cevdet-special-t .banners .col:not(.vip){
+          width: 20% !important;
+        }
+        .cevdet-special-t .banners .col {
+          width: 25%;
+          padding: 8px;
+        }
+        @media (max-width: 1500px) {
+          .cevdet-special-t .banners .col:not(.vip){
+            width: 25% !important;
+          }
+          .cevdet-special-t .banners .col {
+            width: 50% !important;
+        }
+        }
+        @media (max-width: 1300px) {
+          .cevdet-special-t .banners .col {
+            width: 50%;
+        }
+        }
+        .cevdet-special-t .banners .col .item {
+          display: flex;
+          color: #fff;
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.60);
+          flex-direction: column;
+          background: rgba(0, 0, 0, 0.6);
+          width: 100%;
+          border-radius: 20px;
+          display: flex;
+          position: relative;
+          text-decoration: none !important;
+          border: 4px solid transparent;
+          transition: all 0.3s linear;
+          cursor: pointer;
+        }
+        .cevdet-special-t .banners .col .item:hover {
+          z-index: 2;
+          transform: scale(1.1);
+        }
+        .cevdet-special-t .banners .col .item.vip {
+          border-color: #fdab0e;
+          position: relative;
+        }
+        .cevdet-special-t .banners .col .item.vip .crown-col {
+          position: absolute;
+          background: linear-gradient(111deg, rgba(249, 144, 33, 1) 0%, rgba(251, 190, 75, 1) 47%, rgba(249, 144, 33, 1) 100%);
+          width: 50px;
+          height: 50px;
+          border-radius: 100%;
+          top: -15px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          right: -15px;
+        }
+        .cevdet-special-t .banners .col .item.vip .crown-col img {
+          width: 40px !important;
+        }
+        .cevdet-special-t .banners .col .item:not(.vip) .top {
+            padding: 5px !important;
+        }
+        .cevdet-special-t .banners .col .item:not(.vip) .top img {
+            width: 130px !important;
+            height: 40px !important;
+        }
+        .cevdet-special-t .banners .col .item .top {
+          padding: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
+        .cevdet-special-t .banners .col .item .top img {
+          width: 200px;
+          height: 50px;
+          object-fit: contain;
+        }
+        .cevdet-special-t .banners .col .item .bottom {
+          border-radius: 0 0 20px 20px;
+          display: flex;
+          justify-content: space-between;
+          padding: 15px 25px;
+          font-size: 12px;
+          display: flex;
+          align-items: center;
+          background: rgba(0, 0, 0, 0.6);
+        }
+        .cevdet-special-t .banners .col .item .bottom .star {
+          height: 20px;
+          object-fit: contain;
+        }
+        .cevdet-special-t .banners .col .item .bottom .button {
+          padding: 7px;
+          width: 180px;
+          color: #000;
+          font-weight: bold;
+          text-align: center;
+          background: linear-gradient(111deg, rgba(249, 144, 33, 1) 0%, rgba(251, 190, 75, 1) 47%, rgba(249, 144, 33, 1) 100%);
+          border-radius: 30px;
+          font-size: 10px;
+        }
+        .cevdet-special-t .social ul {
+          margin: 0px;
+          display: flex;
+        }
+        .cevdet-special-t .social ul li {
+          margin: 0 10px;
+        }
+        .cevdet-special-t .social ul li a {
+          display: flex;
+          color: #fff;
+          font-size: 12px;
+          justify-content: center;
+          align-items: center;
+          padding: 10px;
+          border-radius: 30px;
+          transition: all 0.3s linear;
+        }
+        .cevdet-special-t .social ul li a:hover {
+          z-index: 2;
+          transform: scale(1.1);
+          background: #117d6e;
+        }
+        .cevdet-special-t .social ul li a svg {
+          width: 15px;
+          margin-right: 5px;
+          fill: #fff !important;
+        }
+        .cevdet-special-t .social ul li a svg path, .cevdet-special-t .social ul li a svg g {
+          fill: #fff;
+        }
+        @media (max-width: 996px) {
+          .cevdet-special-t .banners .col:not(.vip){
+            width: 50% !important;
+          }
+          .bottom-fixed{
+            width: 100% !important;
+          }
+          .bottom-fixed h1{
+            font-size: 12px !important;
+          }
+          .bottom-fixed p{
+            font-size: 12px !important;
+          }
+          .bottom-fixed img{
+            width: 80px !important;
+          }
+          .cevdet-special-t .footer-c{
+            flex-direction: column;
+          }
+          .cevdet-special-t .footer-c>*{
+            margin: 10px 0;
+          }
+          .banners .item .top img {
+            width: 150px !important;
+        }
+          .banners .bottom .button {
+            width: 100% !important;
+        }
+          .banners .bottom .star {
+            display: none;
+        }
+          .social ul {
+            flex-wrap: wrap;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+          .social ul a {
+            margin: 5px 0;
+        }
+          .cevdet-special-t {
+            background-size: cover;
+        }
+          .cevdet-special-t .container {
+            width: 100% !important;
+        }
+          .cevdet-special-t .fix-side {
+            position: relative;
+            width: 100%;
+            flex-direction: row;
+            height: 100px;
+            top: 0px;
+            left: 0px !important;
+            margin-bottom: 15px;
+            right: 0px !important;
+            transform: none;
+        }
+          .cevdet-special-t .fix-side.right {
+            margin-top: 20px !important;
+            margin-bottom: 0px !important;
+        }
+          .cevdet-special-t .fix-side .down {
+            display: none;
+        }
+          .cevdet-special-t .fix-side .button {
+            margin-left: 20px;
+        }
+          .cevdet-special-t .fix-side .star {
+            height: 90px;
+            width: inherit !important;
+            object-fit: contain;
+        }
+          .cevdet-special-t .fix-side .star.two {
+            display: none;
+        }
+          .cevdet-special-t .fix-side .slogan {
+            display: none;
+        }
+          .cevdet-special-t .fix-side .logo {
+            height: auto;
+            margin: 0px;
+        }
+          .cevdet-special-t .fix-side .logo img {
+            margin: 0px;
+            transform: none;
+            height: 40px;
+            width: inherit !important;
+        }
+        }
+        a {
+          text-decoration: none;
+        }
+        li {
+          list-style: none;
+        }
+        ul {
+          margin: 0px !important;
+        }
+
+        @-webkit-keyframes ticker {
+          0% {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+            visibility: visible;
+          }
+          100% {
+            -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+          }
+        }
+        @keyframes ticker {
+          0% {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+            visibility: visible;
+          }
+          100% {
+            -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+          }
+        }
+        .ticker-wrap {
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+          z-index: 99999;
+          overflow: hidden;
+          height: 3rem;
+          background-color: rgba(0, 0, 0, 0.9);
+          padding-left: 100%;
+          left: 0px;
+          box-sizing: content-box;
+        }
+        .ticker-wrap .ticker:hover{
+          animation-play-state: paused;
+        }
+        .ticker-wrap .ticker {
+          display: inline-block;
+          height: 3rem;
+          line-height: 3rem;
+          white-space: nowrap;
+          padding-right: 100%;
+          box-sizing: content-box;
+          -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+          -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+          -webkit-animation-name: ticker;
+          animation-name: ticker;
+          -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+        }
+        .ticker-wrap .ticker__item {
+          display: inline-block;
+          padding: 0 2rem;
+          font-size: 1rem;
+          color: white;
+        }
+        .hide{
+          display: none;
+        }
+        .bottom-fixed{
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.60);
+          width: 800px;
+          height: 90px;
+          z-index: 9999999;
+          background: rgba(0, 0, 0, 0.849);
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+          position: fixed;
+          bottom: 0px;
+          left: 50%;
+          padding: 0px 40px;
+          border: 1px solid #f99021;
+          border-bottom: 0px;
+          transform: translateX(-50%);
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .bottom-fixed .button{
+          position: fixed;
+          right: 10px;
+          cursor: pointer;
+          top: 10px;
+        }
+        .bottom-fixed .center{
+          text-align: center;
+          font-size: 12px;
+        }
+        .bottom-fixed .center h1{
+          font-size: 20px;
+          color: #f99021;
+          margin: 0px;
+        }
+        .bottom-fixed .center p{
+          font-size: 14px;
+          margin: 5px;
+          text-transform: uppercase;
+          font-weight: 900;
+        }
+        .bottom-fixed a{
+          padding: 7px;
+          width: 120px;
+          color: #000;
+          font-weight: bold;
+          text-align: center;
+          background: linear-gradient(111deg, #f99021 0%, rgba(251, 190, 75, 1) 47%, rgba(249, 144, 33, 1) 100%);
+          border-radius: 30px;
+          font-size: 10px;
+        }
+        .bottom-fixed .button svg{
+          width: 30px;
+          height: 30px;
+          stroke: #fff;
+        }
+    </style>
+</body>
+
+</html></div>
+
+                                                            </div>
+            </main>
+
+
+            <footer id="footer" class="link-footer">
+                                <div id="link-verified-wrapper-bottom" class="my-3" style="display: none;">
+                </div>
+
+                <div id="branding" class="link-footer-branding">
+                                </div>
+            </footer>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<input type="hidden" name="global_site_url" value="index.html" />
+<input type="hidden" name="global_url" value="en/index.html" />
+<input type="hidden" name="global_token" value="fbe5ec36f5852c7ef159f970c428d407" />
+<input type="hidden" name="global_number_decimal_point" value="." />
+<input type="hidden" name="global_number_thousands_separator" value="," />
+
+<script>
+    window.altum = {};
+    let global_token = document.querySelector('input[name="global_token"]').value;
+    let site_url = document.querySelector('input[name="global_site_url"]').value;
+    let url = document.querySelector('input[name="global_url"]').value;
+    let decimal_point = document.querySelector('[name="global_number_decimal_point"]').value;
+    let thousands_separator = document.querySelector('[name="global_number_thousands_separator"]').value;
+</script>
+
+    <script>
+    document.querySelectorAll('a[data-track-biolink-block-id]').forEach(element => {
+        element.addEventListener('click', event => {
+            let biolink_block_id = event.currentTarget.getAttribute('data-track-biolink-block-id');
+            navigator.sendBeacon(`${site_url}l/link?biolink_block_id=${biolink_block_id}&no_redirect`);
+        });
+    });
+</script>
+
+    <script>
+        let language_code = document.documentElement.getAttribute('lang');
+        let languages = {};
+        languages[language_code] = {
+            consent_modal: {
+                title: "We use cookies \ud83c\udf6a",
+                description: "Hi, this website uses essential cookies to ensure its proper operation and tracking cookies to understand how you interact with it. The latter will be set only after consent. <button type=\"button\" data-cc=\"c-settings\" class=\"cc-link\">Let me choose<\/button>",
+                primary_btn: {
+                    text: "Accept all",
+                    role: 'accept_all'
+                },
+                secondary_btn: {
+                    text: "Reject all",
+                    role: 'accept_necessary'
+                }
+            },
+            settings_modal: {
+                title: "Cookie preferences",
+                save_settings_btn: "Save settings",
+                accept_all_btn: "Accept all",
+                reject_all_btn: "Reject all",
+                close_btn_label: "Close",
+                blocks: [
+                    {
+                        title: "Cookie usage \ud83d\udce2",
+                        description: "We use cookies to ensure the basic functionalities of the website and to enhance your online experience. You can choose for each category to opt-in\/out whenever you want. For more details relative to cookies and other sensitive data, please read the full <a href=\"\" class=\"cc-link\">privacy policy<\/a>."                    },
+
+                                        {
+                        title: "Strictly necessary cookies",
+                        description: "These cookies are essential for the proper functioning of my website. Without these cookies, the website would not work properly.",
+                        toggle: {
+                            value: 'necessary',
+                            enabled: true,
+                            readonly: true
+                        }
+                    },
+
+
+                                    ]
+            }
+        };
+
+        window.addEventListener('load', () => {
+            let cc = initCookieConsent();
+
+            cc.run({
+                current_lang: language_code,
+                autoclear_cookies: true,
+                page_scripts: true,
+                gui_options: {
+                    consent_modal: {
+                        layout: "cloud",
+                        position: "bottom left",
+                        transition: 'slide',
+                        swap_buttons: false
+                    },
+                    settings_modal: {
+                        layout: 'box',
+                        transition: 'slide'
+                    }
+                },
+                languages: languages,
+
+                            });
+        });
+    </script>

@@ -1,0 +1,62 @@
+<form id="form">
+    <div class="row justify-content-center">
+        <div class="col col-md-3 m-7">
+            <h3>Sola Reklam Ekle</h3>
+  
+            <!-- Text input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+              <label class="form-label" for="form6Example3">Link</label>
+              <input type="text" placeholder="Link giriniz" id="link" class="form-control" name="link" #linkLeft/>
+            </div>
+
+            <div data-mdb-input-init class="form-outline mb-4">
+                <label class="form-label" for="form6Example3">Açıklama</label>
+                <input type="text" placeholder="Açıklama giriniz" id="link" class="form-control" name="link" #leftdescription/>
+              </div>
+
+              <div data-mdb-input-init class="form-outline mb-4">
+                <label class="form-label" for="form6Example3">İndirim Oranı</label>
+                <input type="number" placeholder="Ne kadar indirim var giriniz" id="link" class="form-control" name="link" #leftindirim/>
+              </div>
+          
+            <!-- File input for image -->
+            <div data-mdb-input-init class="form-outline mb-4">
+              <label class="form-label" for="form6Example4">Logo</label>
+              <input class="form-control" placeholder="Fotoğraf - logo seçin" name="logo" type="file" id="logo" (change)="onFileSelected($event)">
+            </div>
+          
+            <!-- Submit button -->
+            <button type="submit" (click)="addLeftAdvert(linkLeft.value,leftdescription.value,leftindirim.value)" class="btn btn-primary btn-block mb-4">Kaydet</button>
+        </div>
+
+        <div class="col col-md-3 m-7">
+            <h3>Sağa Reklam Ekle</h3>
+  
+            <!-- Text input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+              <label class="form-label" for="form6Example3">Link</label>
+              <input type="text" placeholder="Link giriniz" id="link" class="form-control" name="link" #linkRight/>
+            </div>
+
+            <div data-mdb-input-init class="form-outline mb-4">
+                <label class="form-label" for="form6Example3">Açıklama</label>
+                <input type="text" placeholder="Açıklama giriniz" id="link" class="form-control" name="link" #rightdescription/>
+              </div>
+
+              <div data-mdb-input-init class="form-outline mb-4">
+                <label class="form-label" for="form6Example3">İndirim Oranı</label>
+                <input type="number" placeholder="Ne kadar indirim var giriniz" id="link" class="form-control" name="link" #rightindirim/>
+              </div>
+          
+            <!-- File input for image -->
+            <div data-mdb-input-init class="form-outline mb-4">
+              <label class="form-label" for="form6Example4">Logo</label>
+              <input class="form-control" placeholder="Fotoğraf - logo seçin" name="logo" type="file" id="logo" (change)="onFileSelected($event)">
+            </div>
+          
+            <!-- Submit button -->
+            <button type="submit" (click)="addRightAdvert(linkRight.value,rightdescription.value,rightindirim.value)" class="btn btn-primary btn-block mb-4">Kaydet</button>
+        </div>
+    
+    </div>
+  </form>

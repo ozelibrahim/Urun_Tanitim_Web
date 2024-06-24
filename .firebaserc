@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "bets-link": {
+      "hosting": {
+        "linkbet": [
+          "bets-link"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "bets-link"
+  }
+}

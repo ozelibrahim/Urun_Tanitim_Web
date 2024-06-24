@@ -1,0 +1,31 @@
+<form id="form">
+  <h3>Link Ekle</h3>
+
+  <!-- Text input -->
+  <div data-mdb-input-init class="form-outline mb-4">
+    <label class="form-label" for="form6Example3">Link</label>
+    <input type="text" placeholder="Link giriniz" id="link" class="form-control" name="link" #link/>
+  </div>
+
+  <!-- File input for image -->
+  <div data-mdb-input-init class="form-outline mb-4">
+    <label class="form-label" for="form6Example4">Logo</label>
+    <input class="form-control" placeholder="Fotoğraf - logo seçin" name="logo" type="file" id="logo" (change)="onFileSelected($event)">
+  </div>
+
+  <!-- Submit button -->
+  <button type="submit" (click)="addData(link.value)" class="btn btn-primary btn-block mb-4">Kaydet</button>
+</form>
+
+<div class="row" style="margin-top: 20px;">
+  <div class="card" style="width: 18rem;" *ngFor="let link of links">
+    <ng-container *ngIf="link.filebyte !== undefined && isImage(link.filebyte)">
+      <img [src]="decodeBase64(link.filebyte)" class="card-img-top" alt="Image">
+    </ng-container>
+    <div class="card-body">
+      <h5 class="card-title">{{link.link}}</h5>
+      <p class="card-text"></p>
+      <a type="button" class="btn btn-primary" (click)="deleteLink(link.id)">Sil</a>
+    </div>
+  </div> 
+</div>
