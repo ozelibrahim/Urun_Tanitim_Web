@@ -1,3 +1,1 @@
-Yönetim Paneli Kullanıcı adı ve şifresi;
-admin
-123
+Yönetim Paneli Kullanıcı adı: admin şifresi: 123
